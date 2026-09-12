@@ -154,13 +154,15 @@ Stop condition for Mission V1: domain models + shell + health + MCP gateway stub
 | Secret leakage via MCP tools | CRITICAL | Vault + leases; project only authorized tool schemas |
 | Spec paste cutoff (multi-agent / Computer exclusive) | MEDIUM | Tracked as OPEN clarification CLARIFY-CUTOFF-063 |
 
-## 16. OPEN clarification (source paste cutoff)
+## 16. Clarification (source paste cutoff)
 
-**CLARIFY-CUTOFF-063 — OPEN**
+**CLARIFY-CUTOFF-063 — provisionally resolved for Mission Spec intake; product revisit required before Computer exclusive work**
 
 Original operator paste was cut off at section 63 covering **multi-agent concurrency / Computer exclusive** semantics.
 
-Until resolved, do not implement exclusive Computer lease arbitration beyond a stub domain model and documented assumption placeholders. Product must answer:
+**Provisional V1 planning assumption (Mission Spec r2):** Computer capability uses exclusive leases per active agent session with queueing for waiters; shared simultaneous Computer control is out of the first scaffold milestone. Full multi-agent concurrency matrix (preemption, handoff interaction, lease revocation under contention) remains a product decision that MUST be revisited before Computer exclusive implementation ships. Scaffold may model Computer and Lease objects only.
+
+Still answer before implementing exclusive arbitration:
 
 - Exclusive vs shared Computer sessions across agents
 - Queueing, preemption, and handoff rules
