@@ -34,3 +34,7 @@ Scaffold a Next.js App Router TypeScript app with:
 ## Links
 
 - Product context (not dependencies): [fdlc.ai](https://fdlc.ai/) · [Mission Control product page](https://fdlc.ai/mission-control)
+
+## License
+
+MIT — see [LICENSE](LICENSE).
